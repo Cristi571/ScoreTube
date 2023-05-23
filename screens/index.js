@@ -1,7 +1,8 @@
+/* 1st method - explicit
+import LaunchScreen from './LaunchScreen';
+export { LaunchScreen };
+*/
 
-// import LaunchScreen from './LaunchScreen';
-// export { LaunchScreen }
-
-export { default as LaunchScreen } from './LaunchScreen';
-export { default as SignupScreen } from './SignupScreen';
-export { default as LoginScreen } from './LoginScreen';
+// 2nd method - one line
+export {default as LaunchScreen} from './LaunchScreen';
+export {default as SignupScreen} from './SignupScreen';

@@ -1,17 +1,18 @@
+// rnfs
+import { Pressable, StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
-import { Pressable, StyleSheet, Text, View } from 'react-native';
-import React from 'react';
-
-export default function CustomButton(props) {
-    return (
-        <Pressable onPress={props.onPress}
-        style={()=> 
-        props.outline ? [styles.btnFrame, styles.outline] : styles.btnFrame}>
-            <Text style={styles.btnLabel}>{props.label}</Text>
-        </Pressable>
-    )
-}
-
+export default function CustomButton(props) { 
+return (
+    <Pressable onPress={props.onPress} 
+        style={()=>
+        props.outline 
+        ? [styles.btnFrame, styles.outline] :
+        styles.btnFrame
+    }>
+        <Text style={styles.btnLabel}>{props.label}</Text>
+    </Pressable>
+)}
 
 const styles = StyleSheet.create({
     btnFrame: {
@@ -29,5 +30,5 @@ const styles = StyleSheet.create({
         color: '#777',
         fontWeight: '500',
         fontSize: 20,
-    },
+    }
 })
